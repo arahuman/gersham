@@ -1,0 +1,6 @@
+[B]1.0.3:[/B]
+1. Since youtube changed their rendering engine, a change is made to use the youtube plugin to play youtube vidoes
+
+[B]1.0.0:[/B]
+
+Initial version

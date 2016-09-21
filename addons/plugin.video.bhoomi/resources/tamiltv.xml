@@ -1,0 +1,158 @@
+<items>
+    <item>
+        <title>Athavan TV [UK]</title>
+        <link>rtmp://livestream.5centscdn.com/athavantvvxtv/be597217ee55a93f3ca91ed5174a5a34.sdp swfUrl=http://na.5centscdn.com/jw/player.swf pageUrl=http://livetvchannelsfree.com/athavantv.html timeout=60</link>
+        <thumbnail>https://lh5.googleusercontent.com/-fTfUqRPH0ls/VKb_YDtiyjI/AAAAAAAAAaU/rBlivK8EJnA/s300/300x300_0005_athavan.png</thumbnail>
+    </item>
+
+    <item>
+        <title>Puthuyugam [IN]</title>
+        <link>http://edge.purplestream.com/live/py/puthuyugam/playlist.m3u8</link>
+        <thumbnail>https://lh5.googleusercontent.com/-CNxUhE_DHQ0/VKcBUfIo5xI/AAAAAAAAAmI/4MWhJMMKc20/s300/300x300_puthuyugam.png</thumbnail>
+    </item>
+
+    <item>
+        <title>EETV [CANADA]</title>
+        <link>http://37.59.17.222:1935/live_ca/eettv/playlist.m3u8</link>
+        <thumbnail>https://lh5.googleusercontent.com/-hQeXAMrHHf4/VKb-ckR8FkI/AAAAAAAAAWQ/tJtc-ii5c6E/s300/300x300_0007_eettv.png</thumbnail>
+    </item>
+
+    <item>
+        <title>Sun Music [US]</title>
+        <link>mms://fm.live.channellive.tv:80/13-SunMusic?ip=62.61.150.14</link>
+        <thumbnail>https://lh4.googleusercontent.com/-X1IHUNIFLLw/VKb-jwRKo_I/AAAAAAAAAYw/r2O0t45A5tM/s300/300x300_us_sun_music.png</thumbnail>
+    </item>
+
+    <item>
+        <title>Isaiyaruvi [US]</title>
+        <link>http://fm4.channelLive.tv/4-Isai</link>
+        <thumbnail>https://lh3.googleusercontent.com/-uxeBsmydjEA/VKb-fCf0UDI/AAAAAAAAAW8/_da6iuynpD0/s300/300x300_us_kalai_isaiyaruvi.png</thumbnail>
+    </item>
+
+    <item>
+		<title>MK TV [IN]</title>
+		<link>http://mktv.airdesigntechnology.com/mktv/mktv.stream/playlist.m3u8</link>
+		<thumbnail>https://lh4.googleusercontent.com/-RODSxdnTfp0/VKcBTaEv0SI/AAAAAAAAAlo/PRyUI-M46I0/s300/300x300_mk.png</thumbnail>
+	</item>
+
+    <item>
+        <title>Super TV</title>
+        <link>rtmp://supertv.airdesigntechnology.com/supertv/supertv.stream</link>
+        <thumbnail>https://lh6.googleusercontent.com/-5w7_mJm4um0/VKcBY6H_KqI/AAAAAAAAAnw/xHoKszDziwc/s300/300x300_supertv.png</thumbnail>
+    </item>
+
+    <item>
+        <title>Jil Jil TV</title>
+        <link>rtmp://emedias.com/jiljiltv/live1</link>
+        <thumbnail>https://lh6.googleusercontent.com/-_Qwo-KY9MdA/VKcBQt1UlyI/AAAAAAAAAkw/HDxBO6ANqoo/s300/300x300_jiljiltv.png</thumbnail>
+    </item>
+
+    <item>
+        <title>Polimer TV [IN]</title>
+        <link>http://polimertv3.livewebcast.in/polimertv/polimertv.stream/playlist.m3u8</link>
+		<thumbnail>https://lh3.googleusercontent.com/-r7fDrR7fLHI/VKcBUUXyWiI/AAAAAAAAAmE/qbecmK9mKOk/s300/300x300_polimer.png</thumbnail>
+    </item>
+
+    <item>
+		<title>Imayam TV [IN]</title>
+		<link>http://38.96.148.172:1935/live/robinson/playlist.m3u8</link>
+		<thumbnail>https://lh3.googleusercontent.com/-Pze5WLacwyE/VKcBPFtjmyI/AAAAAAAAAkE/zKAemYTpN4o/s300/300x300_imayam.png</thumbnail>
+	</item>
+
+    <item>
+        <title>Dheeran TV [IN]</title>
+        <link>http://edge.purplestream.com/live/dhtv/dheetv_1/playlist.m3u8</link>
+        <thumbnail>https://lh3.googleusercontent.com/-xWgsrpH9qIA/VKcBOXqyDZI/AAAAAAAAAkA/_LtgZQGo1QQ/s300/300x300_dheeran.png</thumbnail>
+    </item>
+
+    <item>
+        <title>Peppers TV [IN]</title>
+        <link>rtmp://live.wmncdn.net/pepperstv/51f5cdae2cc7bd5e4e8e76b7357ae0f8.sdp</link>
+        <thumbnail>https://lh3.googleusercontent.com/-T03QZQwQ0ok/VKcBUB_3ouI/AAAAAAAAAl4/egZiQW5tASM/s300/300x300_peppers.png</thumbnail>
+    </item>
+
+	<item>
+        <title>Arra TV [IN]</title>
+        <link>http://edge.purplestream.com/live/arramedia/amlst:arratv/playlist.m3u8</link>
+        <thumbnail>https://lh4.googleusercontent.com/-SA-VHCBGp6o/VKcBNu0iVVI/AAAAAAAAAjs/YGEYePWUZME/s300/300x300_arratv.png</thumbnail>
+    </item>
+
+    <item>
+        <title>Shalini Web TV [IN]</title>
+        <link>rtmp://live.wmncdn.net/shalini/ playpath=7bb6687be4c09693ced378f17133c850.sdp swfUrl=http://player-apac-sing.webmobilive.com/player/liveplayer.swf pageUrl=http://livetvchannelsfree.com/shalinitv.html</link>
+        <thumbnail>https://lh3.googleusercontent.com/-uoh0wWxQP-A/VKcBV2ygGZI/AAAAAAAAAm4/EOYV2bbRJvI/s300/300x300_shalini.png</thumbnail>
+    </item>
+
+    <item>
+		<title>Puthiya Thalaimurai News [IN]</title>
+		<link>http://newgenlive-lh.akamaihd.net/i/ptmng1_1@141316/master.m3u8</link>
+		<thumbnail>https://lh4.googleusercontent.com/-q713auZkwuk/VKcA3ncq8wI/AAAAAAAAAi4/gs3NVcvAmmA/s300/300x300_puthiyathalaimurai.png</thumbnail>
+	</item>
+
+    <item>
+        <title>Thanthi TV News [IN]</title>
+		<link>http://edge.purplestream.com/live/ttv/amlst:dttv/playlist.m3u8</link>
+        <thumbnail>https://lh4.googleusercontent.com/-rZurlJLIMTg/VKcA2vOe7mI/AAAAAAAAAig/qCqM1-QXOWw/s300/300x300_Thanthi.png</thumbnail>
+    </item>
+
+	<item>
+		<title>News 7 [IN]</title>
+		<link>http://edge.purplestream.com/live/ns7/amlst:news7tamil/playlist.m3u8</link>
+		<thumbnail>https://lh4.googleusercontent.com/-H_foDy-SQVs/VKcA2yrVXQI/AAAAAAAAAiw/uyNbd4yh0fQ/s300/300x300_news7.png</thumbnail>
+	</item>
+
+    <item>
+        <title>Polimer News [IN]</title>
+        <link>http://polimernews3.livewebcast.in/polimernews/polimernews.stream/playlist.m3u8</link>
+        <thumbnail>https://lh5.googleusercontent.com/-10wms9qF4Nw/VKcA3IlFGWI/AAAAAAAAAi0/YAI5o1usXlU/s300/300x300_polimernews.png</thumbnail>
+    </item>
+
+    <item>
+        <title>Lotus News [IN]</title>
+        <link>rtmp://live.wmncdn.net/lotus/ playpath=25526e8cfa035fc30910e40b3f2e4348.sdp swfUrl=http://player.longtailvideo.com/player5.9.swf pageUrl=http://desichannels.webnode.com/hindi-channels/</link>
+        <thumbnail>https://lh4.googleusercontent.com/-mEwdEz2gARA/VKcA2_LNP6I/AAAAAAAAAjM/HYshRx9Agr4/s300/300x300_lotus.png</thumbnail>
+    </item>
+
+    <item>
+        <title>DD Pothigai [IN]</title>
+        <link>rtmp://50.7.175.252:1940/base2 playpath=dd10.stream swfUrl=http://tamiltv.tv/wp-content/uploads/jw-player-plugin-for-wordpress/player/player.swf pageUrl=http://tamiltv.tv/dd-podhigai-live/ token=Vu4KaBzaxa swfVfy=true live=true timeout=15</link>
+        <thumbnail>https://lh5.googleusercontent.com/-HvCCeW4bgOk/VKdqPXOAIzI/AAAAAAAAAqU/rP-bEpaV7qk/s300/300x300_dd_dhoor.png</thumbnail>
+    </item>
+
+    <item>
+        <title>FA TV Tamil</title>
+        <link>rtmp://109.228.13.240:1935/live playpath=myStream swfUrl=http://fpdownload.adobe.com/strobe/FlashMediaPlayback.swf live=true pageUrl=http://www.firstaudio.net/beta/live/fatv.html</link>
+        <thumbnail>https://lh6.googleusercontent.com/-4CTVgrPrpok/VKcBO8pzKNI/AAAAAAAAAkM/M6bULpxmxsw/s300/300x300_fatv.png</thumbnail>
+    </item>
+
+	<item>
+        <title>Sivan TV [SWISS]</title>
+        <link>rtmp://rtmp.infomaniak.ch/livecast playpath=sivan swfUrl=http://static.infomaniak.ch/livetv/playerMain-v4.2.47.swf?bLd=0&amp;sTitle=&amp;sVersion=4%2E2%2E47&amp;sDescription= pageUrl=http://livevideo.infomaniak.com/iframe.php?stream=sivan&amp;name=sivan_tv&amp;player=1643 timeout=15</link>
+        <thumbnail>https://lh5.googleusercontent.com/-7SUA9CXktCE/VKb_YZ9B3CI/AAAAAAAAAaY/VzTn6KvDX4g/s300/300x300_0004_sivantv.png</thumbnail>
+    </item>
+
+	<item>
+		<title>Ambaal TV[UK]</title>
+		<link>rtmp://app2dial.com:1935/ambaal playpath=ambaal.stream swfUrl=http://cloudmediaworld.co.uk/player/player.swf pageUrl=http://cloudmediaworld.co.uk/ambaal.php</link>
+		<thumbnail>https://lh3.googleusercontent.com/-CldBMhZYrvA/VKb_ZMGITrI/AAAAAAAAAak/0-TRvK5NsFc/s300/300x300_uk_ambaal.png</thumbnail>
+	</item>
+
+	<item>
+		<title>Ohm TV [UK]</title>
+		<link>rtmp://livestream.5centscdn.com/ohmtvvxtv/ playpath=08b3851f6821f4dab6ce2bc4a429ddfe.sdp swfUrl=http://na.5centscdn.com/jw/player.swf pageUrl=http://athavannews.com/?page_id=139560</link>
+		<thumbnail>https://lh5.googleusercontent.com/-Xkbyd2Bjvf0/VKcBT3LC8tI/AAAAAAAAAmA/6sKD0uGvh30/s300/300x300_ohm.png</thumbnail>
+	</item>
+
+    <item>
+        <title>Vasantham TV [SL]</title>
+        <link>rtmp://mediacp2.comcities.com:1935/itn-vasantham playpath=itn-vasantham swfUrl=http://cdn.itnlanka.com/vasanthamtv.swf live=true pageUrl=http://cdn.itnlanka.com/vasanthamtv.swf</link>
+        <thumbnail>https://lh5.googleusercontent.com/-TgO9RPsLdJ4/VKcANWisBHI/AAAAAAAAAfg/QRfV-PF0iMw/s300/300x300_vasantham.png</thumbnail>
+    </item>
+
+    <item>
+        <title>Nethra TV [SL]</title>
+        <link>http://dammikartmp.tulix.tv/slrc2/slrc2/playlist.m3u8</link>
+        <thumbnail>https://lh5.googleusercontent.com/-K6GIImKHYOI/VKcANfUYYZI/AAAAAAAAAfY/9WXfiwahWrU/s300/300x300_nethratv.png</thumbnail>
+    </item>
+
+</items>

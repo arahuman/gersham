@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+<!--Common-->
+  <string id="10">Mute</string>
+  <string id="11">Apply</string>
+  <string id="12">Save</string>
+  
+  <string id="1">Mon</string>
+  <string id="2">Tue</string>
+  <string id="3">Wed</string>
+  <string id="4">Thu</string>
+  <string id="5">Fri</string>
+  <string id="6">Sat</string>
+  <string id="7">Sun</string>
+  
+  
+  <string id="21">January</string>
+  <string id="22">February</string>
+  <string id="23">March</string>
+  <string id="24">April</string>
+  <string id="25">May</string>
+  <string id="26">June</string>
+  <string id="27">July</string>
+  <string id="28">August</string>
+  <string id="29">September</string>
+  <string id="30">October</string>
+  <string id="31">November</string>
+  <string id="32">December</string>
+  
+  
+  
+  <string id="100">Start week on</string>
+  <string id="101">Today</string>
+  
+
+
+</strings>
+

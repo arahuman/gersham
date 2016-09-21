@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.bhoomi" name="Bhoomi TV" version="1.0.4" provider-name="gersham">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	 <import addon="script.module.simplejson" version="2.0.10" />
+    <import addon="script.module.beautifulsoup" version="3.2.0"/>
+    <import addon="script.module.urlresolver" version="2.0.9"/>
+    <import addon="plugin.video.dailymotion_com" version="2.1.1"/>
+    <import addon="script.module.t0mm0.common" version="2.1.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Bhoomi TV - Tamil Entertainment powerhouse</summary>
+    <description lang="en">Bhoomi TV will allow you to watch all the archives of popular tamil channels shows, Movies, Live Radios &amp; Live TV </description>
+    <platform>all</platform>
+    <language>Tamil</language>
+    <license>GNU GENERAL PUBLIC LICENSE.</license>
+  </extension>
+</addon>

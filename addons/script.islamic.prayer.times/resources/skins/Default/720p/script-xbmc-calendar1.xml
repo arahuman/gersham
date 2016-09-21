@@ -1,0 +1,1144 @@
+<window>
+	<defaultcontrol always="true">98</defaultcontrol>
+	<allowoverlays>false</allowoverlays>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
+	<coordinates>
+		<system>1</system>
+		<posx>200</posx>
+		<posy>45</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<posx>-200</posx>
+			<posy>-45</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>alsa-black.png</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>880</width>
+			<height>630</height>
+			<texture border="40">alsa-panel.png</texture>
+		</control>
+		<control type="image">
+			<posx>80</posx>
+			<posy>10</posy>
+			<width>720</width>
+			<height>90</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>alsa-GlassTitleBar.png</texture>
+		</control>
+		<control type="label">
+			<description>header label</description>
+			<posx>40</posx>
+			<posy>18</posy>
+			<width>800</width>
+			<height>30</height>
+			<font>font13_title</font>
+			<label>XBMC Calendar</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+        
+        <control type="label" id="801">
+			<description>Month and year label</description>
+			<posx>200</posx>
+			<posy>120</posy>
+			<width>300</width>
+			<height>30</height>
+			<font>font13_title</font>
+			<label>October 2010</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+        <control type="button" id="801">
+            <description></description>
+            <posx>170</posx>
+            <posy>120</posy>
+            <width>30</width>
+            <height>30</height>
+            <texturefocus border="5">alsa-button-focus.png</texturefocus>
+            <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+            <label></label>
+            <font>font12_title</font>
+            <textcolor>FFFFFFFF</textcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <pulseonselect>true</pulseonselect>
+            <onup>901</onup>
+            <ondown>901</ondown>
+            <onleft>98</onleft>
+            <onright>121</onright>
+        </control>   
+        <control type="button" id="802">
+            <description></description>
+            <posx>490</posx>
+            <posy>120</posy>
+            <width>30</width>
+            <height>30</height>
+            <texturefocus border="5">alsa-button-focus.png</texturefocus>
+            <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+            <label></label>
+            <font>font12_title</font>
+            <textcolor>FFFFFFFF</textcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <pulseonselect>true</pulseonselect>
+            <onup>901</onup>
+            <ondown>901</ondown>
+            <onleft>98</onleft>
+            <onright>121</onright>
+        </control>             
+        <control type="button" id="803">
+            <description>Today Button</description>
+            <posx>60</posx>
+            <posy>120</posy>
+            <width>100</width>
+            <height>30</height>
+            <texturefocus border="5">alsa-button-focus.png</texturefocus>
+            <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+            <label>$LOCALIZE[SCRIPT101]</label>
+            <font>font12_title</font>
+            <textcolor>FFFFFFFF</textcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <pulseonselect>true</pulseonselect>
+            <onup>901</onup>
+            <ondown>901</ondown>
+            <onleft>98</onleft>
+            <onright>121</onright>
+        </control>   
+		<control type="grouplist" id="1117">
+			<description>Grouplist</description>
+			<posx>40</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>450</height>
+			<itemgap>5</itemgap>
+			<pagecontrol>121</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>false</usecontrolcoords>
+			<visible>true</visible>
+			<onup>98</onup>
+			<ondown>98</ondown>
+			<onleft>98</onleft>
+			<onright>122</onright>
+            <control type="label" id="2001">
+                <description>day of the week 1</description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <font>font13_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+		    </control>
+            <control type="button" id="1001">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1008">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1015">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1022">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1029">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>            
+            <control type="button" id="1036">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+        </control>
+		<control type="grouplist" id="1118">
+			<description>Grouplist</description>
+			<posx>120</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>450</height>
+			<itemgap>5</itemgap>
+			<pagecontrol>121</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>false</usecontrolcoords>
+			<visible>true</visible>
+			<onup>98</onup>
+			<ondown>98</ondown>
+			<onleft>98</onleft>
+			<onright>122</onright>
+            <control type="label" id="2002">
+                <description>day of the week 2</description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <font>font13_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+		    </control>            
+            <control type="button" id="1002">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1009">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1016">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1023">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1030">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>            
+            <control type="button" id="1037">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+        </control>
+		<control type="grouplist" id="1119">
+			<description>Grouplist</description>
+			<posx>200</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>450</height>
+			<itemgap>5</itemgap>
+			<pagecontrol>121</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>false</usecontrolcoords>
+			<visible>true</visible>
+			<onup>98</onup>
+			<ondown>98</ondown>
+			<onleft>98</onleft>
+			<onright>122</onright>
+            <control type="label" id="2003">
+                <description>day of the week 3</description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <font>font13_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+		    </control>              
+            <control type="button" id="1003">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1010">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1017">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1024">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1031">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>            
+            <control type="button" id="1038">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+        </control>
+		<control type="grouplist" id="1120">
+			<description>Grouplist</description>
+			<posx>280</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>450</height>
+			<itemgap>5</itemgap>
+			<pagecontrol>121</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>false</usecontrolcoords>
+			<visible>true</visible>
+			<onup>98</onup>
+			<ondown>98</ondown>
+			<onleft>98</onleft>
+			<onright>122</onright>
+            <control type="label" id="2004">
+                <description>day of the week 4</description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <font>font13_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+		    </control>              
+            <control type="button" id="1004">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1011">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1018">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1025">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1032">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>            
+            <control type="button" id="1039">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+        </control>
+        
+		<control type="grouplist" id="1121">
+			<description>Grouplist</description>
+			<posx>360</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>450</height>
+			<itemgap>5</itemgap>
+			<pagecontrol>121</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>false</usecontrolcoords>
+			<visible>true</visible>
+			<onup>98</onup>
+			<ondown>98</ondown>
+			<onleft>98</onleft>
+			<onright>122</onright>
+            <control type="label" id="2005">
+                <description>day of the week 5</description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <font>font13_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+		    </control>              
+            <control type="button" id="1005">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1012">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1019">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1026">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1033">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>            
+            <control type="button" id="1040">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+        </control>		
+        <control type="grouplist" id="1122">
+			<description>Grouplist</description>
+			<posx>440</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>450</height>
+			<itemgap>5</itemgap>
+			<pagecontrol>121</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>false</usecontrolcoords>
+			<visible>true</visible>
+			<onup>98</onup>
+			<ondown>98</ondown>
+			<onleft>98</onleft>
+			<onright>122</onright>
+            <control type="label" id="2006">
+                <description>day of the week 6</description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <font>font13_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+		    </control>              
+            <control type="button" id="1006">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1013">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1020">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1027">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1034">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>            
+            <control type="button" id="1041">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+        </control>		
+        <control type="grouplist" id="1123">
+			<description>Grouplist</description>
+			<posx>520</posx>
+			<posy>150</posy>
+			<width>800</width>
+			<height>450</height>
+			<itemgap>5</itemgap>
+			<pagecontrol>121</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>false</usecontrolcoords>
+			<visible>true</visible>
+			<onup>98</onup>
+			<ondown>98</ondown>
+			<onleft>98</onleft>
+			<onright>122</onright>
+            <control type="label" id="2007">
+                <description>day of the week 7</description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <font>font13_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+		    </control>              
+            <control type="button" id="1007">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1014">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1021">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1028">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+            <control type="button" id="1035">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>            
+            <control type="button" id="1042">
+                <description></description>
+                <posx>10</posx>
+                <posy>5</posy>
+                <width>60</width>
+                <height>40</height>
+                <texturefocus border="5">alsa-button-focus.png</texturefocus>
+                <texturenofocus border="5">alsa-button-nofocus.png</texturenofocus>
+                <label></label>
+                <font>font12_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <pulseonselect>true</pulseonselect>
+                <onup>901</onup>
+                <ondown>901</ondown>
+                <onleft>98</onleft>
+                <onright>121</onright>
+            </control>
+        </control>		
+                             
+                                                                             
+		<control type="spincontrol" id="121">
+			<description>Nextpagebutton</description>
+			<posx>800</posx>
+			<posy>530</posy>
+			<width>20</width>
+			<height>20</height>
+			<font>font13</font>
+			<align>right</align>
+			<subtype>page</subtype>
+			<onleft>99</onleft>
+			<onright>98</onright>
+			<ondown>901</ondown>
+			<onup>901</onup>
+			<textoffsetx>10</textoffsetx>
+			<textureup>alsa-scroll-up.png</textureup>
+			<texturedown>alsa-scroll-down.png</texturedown>
+			<textureupfocus>alsa-scroll-up-focus.png</textureupfocus>
+			<texturedownfocus>alsa-scroll-down-focus.png</texturedownfocus>
+			<showonepage>false</showonepage>
+			<visible>Control.IsVisible(17)</visible>
+		</control>
+	</controls>
+</window>

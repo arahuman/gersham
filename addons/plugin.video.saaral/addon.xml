@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.saaral" name="Saaral Tamil Channels" version="2.0.0" provider-name="Gersham">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>XBMC Plugin to watch popular tamil channel shows.</summary>
+    <description>Saaral will allow you to watch all the archives of popular tamil channels shows.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

@@ -1,0 +1,17 @@
+zip -r downloads/plugin.video.bharat/plugin.video.bharat-1.0.4.zip plugin.video.bharat -x ".*" -x "*/.*"
+
+svn checkout https://gersham-xbmc-repo.googlecode.com/svn/ gersham-xbmc-repo --username arahuman@gmail.com
+
+-- to list all the newly added files will be shown as ?
+svn status 
+
+svn status | grep ?
+
+then add each file using svn add
+
+svn add "file name along with path"
+
+svn delete "file name "
+
+
+svn commit -m "comment"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.bharat" name="Bharat Tamil Channels" version="2.0.3" provider-name="Gersham">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.1.1"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.urlresolver" version="2.4.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>XBMC Plugin to watch popular tamil channel shows.</summary>
+    <description>Saaral will allow you to watch all the archives of popular tamil channels shows.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+<!-- Options -->
+	<string id="30000">1</string>
+	<string id="30001">2</string>
+	<string id="30002">3</string>
+	<string id="30003">5</string>
+	<string id="30004">10</string>
+</strings>

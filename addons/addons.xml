@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.bharat" name="Bharat Tamil Channels" version="2.0.3" provider-name="Gersham">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.1.1"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.urlresolver" version="2.4.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>XBMC Plugin to watch popular tamil channel shows.</summary>
+    <description>Saaral will allow you to watch all the archives of popular tamil channels shows.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.bhoomi" name="Bhoomi TV" version="1.0.4" provider-name="gersham">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	 <import addon="script.module.simplejson" version="2.0.10" />
+    <import addon="script.module.beautifulsoup" version="3.2.0"/>
+    <import addon="script.module.urlresolver" version="2.0.9"/>
+    <import addon="plugin.video.dailymotion_com" version="2.1.1"/>
+    <import addon="script.module.t0mm0.common" version="2.1.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Bhoomi TV - Tamil Entertainment powerhouse</summary>
+    <description lang="en">Bhoomi TV will allow you to watch all the archives of popular tamil channels shows, Movies, Live Radios &amp; Live TV </description>
+    <platform>all</platform>
+    <language>Tamil</language>
+    <license>GNU GENERAL PUBLIC LICENSE.</license>
+  </extension>
+</addon>
+
+<addon id="plugin.video.saaral" name="Saaral Tamil Channels" version="2.0.0" provider-name="Gersham">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>XBMC Plugin to watch popular tamil channel shows.</summary>
+    <description>Saaral will allow you to watch all the archives of popular tamil channels shows.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.saaral.movies" name="Saaral Indian movies" version="3.0.0" provider-name="Gersham">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>XBMC Plugin to watch Indian movie in HQ.</summary>
+    <description>Saaral will allow you to watch Indian movies in HQ.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.googlecode.gersham-xbmc-repo" name="Gersham XBMC Addons" version="1.0.7" provider-name="Gersham">
+	<extension point="xbmc.addon.repository" name="gersham addon repository">
+		<info compressed="false">https://www.dropbox.com/s/u9n16eeshsqmfdr/addons.xml?dl=1</info>
+		<checksum>https://www.dropbox.com/s/kx5x5gsl8cw2t8d/addons.xml.md5?dl=1</checksum>
+		<datadir zip="true">https://www.dropbox.com/sh/4o8z0rx3ghnhpjv/AAD3U_GNZ1PDZV7I4rQ684exa?dl=0</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Addons from http://gersham-xbmc-repo.googlecode.com</summary>
+		<description>Download and install addons from gersham repository.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.islamic.prayer.times"
+       name="Islamic Prayer Times"
+       version="2.0.0"
+       provider-name="Team XBMC">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Islamic Prayer Times</summary>
+    <description lang="en">Islamic salat calendar</description>
+  </extension>
+</addon>
+</addons>

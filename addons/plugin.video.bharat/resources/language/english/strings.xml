@@ -1,0 +1,42 @@
+<strings>
+  
+  	<string id="30001">Views</string>
+    <string id="30002">Thumbnail</string>
+    <string id="30003">Poster Wrap</string>
+    <string id="30004">List</string>
+    <string id="30005">Media Info 2</string>
+    <string id="30006">Media Info</string>
+    <string id="30007">Fanart</string>
+    <string id="30008">Movie View</string>
+    <string id="30009">Enable Views</string>
+    <string id="30010">Enable Fanart</string>
+
+    <string id="30102">Enable Automatic View</string>
+    <string id="30103">       Movies View</string>
+    <string id="30104">       TV Shows View</string>
+    <string id="30106">       Episodes View</string>
+    <string id="30108">       Default View</string>
+
+    <string id="30201">Library Integration</string>
+    <string id="30202">TV Show Folder:</string>
+    <string id="30203">Movie Folder:</string>
+    <string id="30204">Enable automatic subscription updates</string>
+	<string id="30205">       Subscription update interval</string>
+	<string id="30206">       Update library afterward?</string>    
+
+    <string id="30301">Miscellaneous</string>
+	<string id="30302">Theme</string>
+	<string id="30303">Auto Watch</string>
+	<string id="30304">Watched Percent</string>
+    <string id="30305">Cache Hours</string>
+
+    <string id="30401">Database</string>
+	<string id="30402">Use a remote MySQL DB</string>
+	<string id="30403">    Address</string>
+	<string id="30404">    Port</string>
+	<string id="30405">    Username</string>
+	<string id="30406">    Password</string>
+	<string id="30407">    Database</string>
+	<string id="30408">    Migrate local DB</string>
+
+</strings>
