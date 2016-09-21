@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.googlecode.gersham-xbmc-repo" name="Gersham XBMC Addons" version="1.0.7" provider-name="Gersham">
+<addon id="repository.git.gersham-repo" name="Gersham Kodi Addons" version="1.0.8" provider-name="Gersham">
 	<extension point="xbmc.addon.repository" name="gersham addon repository">
 		<info compressed="false">https://www.dropbox.com/s/u9n16eeshsqmfdr/addons.xml?dl=1</info>
 		<checksum>https://www.dropbox.com/s/kx5x5gsl8cw2t8d/addons.xml.md5?dl=1</checksum>
 		<datadir zip="true">https://www.dropbox.com/sh/4o8z0rx3ghnhpjv/AAD3U_GNZ1PDZV7I4rQ684exa?dl=1</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Install Addons from http://gersham-xbmc-repo.googlecode.com</summary>
+		<summary>Install Addons from https://github.com/arahuman/gersham/tree/master/addons</summary>
 		<description>Download and install addons from gersham repository.</description>
 		<platform>all</platform>
 	</extension>
