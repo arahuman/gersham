@@ -24,5 +24,5 @@
         <setting id="db_pass"       type="text"     label="30406"   enable="eq(-4,true)" default="" option="hidden"/>
         <setting id="db_name"       type="text"     label="30407"   enable="eq(-5,true)" default="{plugin-name}" />
         <setting id="migrateDB"     type="action"   label="30408"   enable="eq(-6,true)" action="RunPlugin(plugin://plugin.video.{plugin-name}/default.py?mode=migrateDB)" />
-    </category>->
+    </category>-->
 </settings>
