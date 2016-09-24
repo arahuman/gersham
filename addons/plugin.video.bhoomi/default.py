@@ -1,22 +1,3 @@
-# import urllib
-# import urllib2
-# import xbmcplugin
-# import xbmcgui
-# import xbmc
-# import xbmcaddon
-# import re
-# import sys
-# import cgi
-# import os
-# import urlresolver
-# from t0mm0.common.addon import Addon
-# from t0mm0.common.net import Net
-# from BeautifulSoup import BeautifulSoup
-# import unicodedata
-# import xml.etree.ElementTree as ET
-# import json
-# import update
-
 import urllib, urllib2
 import xbmcplugin, xbmcgui, xbmc, xbmcaddon
 import re, sys, cgi, os
@@ -33,9 +14,6 @@ try:
     import json
 except ImportError:
     import simplejson as json
-
-#logo_color,size="6D4C",16 square
-#font-size,color,name = 44,white,elston
 programPath = xbmcaddon.Addon().getAddonInfo('path')
 
 def download(uri):
@@ -127,7 +105,7 @@ def settings(action=None):
     xbmcplugin.addDirectoryItem(
         handle=addon_handle, url=urlQuery, listitem=li, isFolder=True)
     xbmcplugin.endOfDirectory(addon_handle)
-    thumbnailView()
+    switchview()
 
 def int2base(x, base):
     if x < 0: sign = -1
@@ -161,11 +139,44 @@ def unpack(p, a, c, k, e=None, d=None):
             p = re.sub('\\b'+int2base(i,a)+'\\b', k[i], p)
     return p
 
-def thumb():
-    xbmc.executebuiltin('Container.SetViewMode(500)')
-
-def thumbnailView():
-    xbmc.executebuiltin('Container.SetViewMode(500)')
+    # View mode ids pulled from skins
+    # VIEW_MODES = {
+    #     'thumbnail': {
+    #         'skin.confluence': 500,
+    #         'skin.aeon.nox': 551,
+    #         'skin.confluence-vertical': 500,
+    #         'skin.jx720': 52,
+    #         'skin.pm3-hd': 53,
+    #         'skin.rapier': 50,
+    #         'skin.simplicity': 500,
+    #         'skin.slik': 53,
+    #         'skin.touched': 500,
+    #         'skin.transparency': 53,
+    #         'skin.xeebo': 55,
+    #     },
+    # }
+    # 0. <string id="30001">List</string>  50
+    # 1. <string id="30002">Big List</string> 51
+    # 2. <string id="30003">Thumbnail</string> 500
+    # 3. <string id="30004">Poster Wrap</string> 501
+    # 4. <string id="30005">Fanart</string>508
+    # 5. <string id="30006">Media Info</string>504    
+    # 6. <string id="30007">Media Info 2</string>503
+    # 7. <string id="30008">Media Info 3</string>515
+def switchview(mode=-1):
+    skin_used = xbmc.getSkinDir()
+    if skin_used == 'skin.confluence':
+        viewmode=[50,51,500,501,508,504,503,515]
+        xbmcplugin.setContent(int(sys.argv[1]), 'movies')
+        if mode < 0 :
+            sel_viewmode = addon.get_setting('movieview')
+            if mode==4:
+                xbmc.executebuiltin('Skin.ToggleSetting(View508HideInfo)')
+        else:
+            sel_viewmode=mode
+        xbmc.executebuiltin('Container.SetViewMode(' + str(viewmode[int(sel_viewmode)]) + ')')
+    elif skin_used == 'skin.aeon.nox':
+        xbmc.executebuiltin('Container.SetViewMode(512)')
 
 def TextBoxes(heading,anounce):
     class TextBox():
@@ -205,12 +216,9 @@ def downloadPythonFile(programPath, pyfile):
     with open(os.path.abspath(programPath + "/" + pyfile), 'w') as f:
         f.write(the_page)
 
-
-
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 def main():
-
     addon.add_directory({'mode': 'yogi_root', 'url': YOGI_URL}, {'title' : '[B]Movies - Yogi[/B]'},
                         img=getImgPath('yogi'))
     addon.add_directory({'mode': 'raj_root', 'url': MOVIE_RAJ_URL}, {'title': '[B]Movies - Raj[/B]'},
@@ -222,15 +230,17 @@ def main():
     addon.add_directory({'mode': 'settings'}, {'title': '[B]Settings[/B]'},
                         img='https://lh3.googleusercontent.com/-XmQchEnyeWs/VTBYFAUm6_I/AAAAAAAACOs/AfaY71aUFz0/s300-Ic42/settings.png')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
+    switchview(2) # always thumbnail
 
 def yogi_root(url):
     addon.add_directory({'mode': 'yogi_movies_list', 'url': url + '/category/tamilyogi-dvdrip-movies/'}, {'title' : '[B]DVD HQ Movies[/B]'}, img=getImgPath('Movies'))
     addon.add_directory({'mode': 'yogi_movies_list', 'url': url + '/category/tamilyogi-full-movie-online'}, {'title' : '[B]New Movies[/B]'}, img=getImgPath('Movies'))
-    addon.add_directory({'mode': 'yogi_movies_list', 'url': url + '/category/tamilyogi-bluray-movies/'}, {'title' : '[B]New Movies[/B]'}, img=getImgPath('Movies'))    
+    addon.add_directory({'mode': 'yogi_movies_list', 'url': url + '/category/tamilyogi-bluray-movies/'}, {'title' : '[B]Bluray Movies[/B]'}, img=getImgPath('Movies'))    
     addon.add_directory({'mode': 'yogi_movies_list', 'url': url + '/category/tamilyogi-dubbed-movies-online/'}, {'title' : '[B]Dubbed Movies[/B]'}, img=getImgPath('Movies'))
     addon.add_directory({'mode': 'yogi_movies_list', 'url': url + '/tamil-hd-movies-tamilyogi/'}, {'title' : '[B]HD Movies[/B]'}, img=getImgPath('Movies'))
     addon.add_directory({'mode': 'yogi_movies_list', 'url': url + '/tamil-new-movies-tamilyogi/'}, {'title' : '[B]HD Trailers[/B]'}, img=getImgPath('Movies'))
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
+    switchview(0) # list mode
 
 def yogi_movies_list(url):
     response = net.http_GET(url)
@@ -238,12 +248,17 @@ def yogi_movies_list(url):
     # Find the movies in the current category
     match=re.compile('<a href="(.+?)" title="(.+?)"><img src="(.+?)"').findall( data )
     for movurl,name,thumb in match:
-        addon.add_directory({'mode': 'yogi_play', 'url': movurl, 'title' : name }, {'title' : name }, img=thumb)
+        try:
+            title =  addon.unescape(name).encode('utf8', 'ignore')
+        except UnicodeDecodeError:
+            title = 'Unicodechar'
+            pass
+        addon.add_directory({'mode': 'yogi_play', 'url': movurl, 'title' : title }, {'title' : title ,'year':'2016'}, img=thumb, fanart=thumb)
     match=re.compile('<a class="next page-numbers" href="(.+?)">').findall(data)
     for page in match:
         addon.add_directory({'mode': 'yogi_movies_list', 'url': page}, {'title' : 'Next Page >>' }, img="https://lh3.googleusercontent.com/-NsVeHCUW0lo/V4b8r67FVSI/AAAAAAAAD7U/G1ifDqs0nFENPck0-oKCQgc3-Gdm_JM7QCCo/s574/next_574x358.png" )
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
-    thumbnailView()
+    switchview()
 
 def yogi_play(url,title,iconImg):
     response = net.http_GET(url)
@@ -287,13 +302,13 @@ def raj_root( url ):
         #title = title.encode('ascii', 'ignore')
         #print 'image================>',img
         index = index + 1
-        thumb()
-        addon.add_directory( { 'mode' : 'cloud_movie_scrub', 'url' : page , 'iconImg' : img}, { 'title' : title }, img=img, total_items=len(link) )
+        switchview()
+        addon.add_directory( { 'mode' : 'cloud_movie_scrub', 'url' : page , 'iconImg' : img}, { 'title' : title }, img=img, fanart=img, total_items=len(link) )
     if nav:
         addon.add_directory( { 'mode' : 'raj_root', 'url' : nav }, { 'title' : '[B]Next Page...[/B]' },img="https://lh3.googleusercontent.com/-NsVeHCUW0lo/V4b8r67FVSI/AAAAAAAAD7U/G1ifDqs0nFENPck0-oKCQgc3-Gdm_JM7QCCo/s574/next_574x358.png"  )
  
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
-    thumbnailView()
+    switchview()
 
 def raj_parse_page( url ):
     print "movie:" + url
@@ -664,16 +679,16 @@ def gun_root( url ):
             title =  addon.unescape(title).encode('utf8', 'ignore')
         except UnicodeDecodeError:
             pass
-        thumb()
+        switchview()
         if not "http://" in img:
             img = "http:"+img
         #print 'tamilgun img: ', img
-        addon.add_directory( { 'mode' : 'cloud_movie_scrub', 'url' : page , 'iconImg' : img}, { 'title' : title }, img=img, total_items=len(link) )
+        addon.add_directory( { 'mode' : 'cloud_movie_scrub', 'url' : page , 'iconImg' : img}, { 'title' : title }, img=img, fanart=img, total_items=len(link) )
     if nav:
         addon.add_directory( { 'mode' : 'gun_root', 'url' : nav[0] }, { 'title' : '[B]Next Page...[/B]' }, img="https://lh3.googleusercontent.com/-NsVeHCUW0lo/V4b8r67FVSI/AAAAAAAAD7U/G1ifDqs0nFENPck0-oKCQgc3-Gdm_JM7QCCo/s574/next_574x358.png" )
  
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
-    thumbnailView()
+    switchview()
 
 def gun_parse_page(url):
     proxy_handler = urllib2.ProxyHandler({})
@@ -702,6 +717,59 @@ def gun_parse_page(url):
     print 'src gun movie', src
 
     return nav, zip(src, img)
+
+def parseYoutube( url ):
+   videos = []
+   link = urllib2.urlparse.urlsplit( url )
+   query = link.query
+   netloc = link.netloc
+   path = link.path
+
+   print "youtube url : " + url
+
+   def parseYoutubePlaylist( playlistId ):
+      videos = []
+      yturl = 'http://gdata.youtube.com/feeds/api/playlists/' + playlistId
+      try:
+         response = net.http_GET( yturl )
+         html = response.content
+      except urllib2.HTTPError, e:
+         print "HTTPError : " + str( e )
+         return videos
+
+      soup = BeautifulSoup( html )
+
+      for video in soup.findChildren( 'media:player' ):
+         videoUrl = str( video[ 'url' ] )
+         print "youtube video : " + videoUrl
+         videos += parseYoutube( videoUrl )
+      return videos
+
+   # Find v=xxx in query if present
+   qv = ''
+   if query:
+      qs = cgi.parse_qs( query )
+      qv = qs.get( 'v', [''] )[ 0 ]
+      if qv:
+         qv = '?v=' + qv
+   
+   # Handle youtube gdata links
+   playlistId = ''
+   if re.search( '\?list=PL', url ):
+      playlistId = re.compile("\?list=PL(.+?)&").findall( url )[ 0 ]
+   elif re.search( '\?list=', url ):
+      playlistId = re.compile("\?list=(.+?)&").findall( url )[ 0 ]
+   elif re.search( '/p/', url ):
+      playlistId = re.compile("/p/(.+?)(?:/|\?|&)").findall( url )[ 0 ]
+   elif re.search( 'view_play_list', url ):
+      plyalistId = re.compile("view_play_list\?.*?&amp;p=(.+?)&").findall( url)[ 0 ]
+
+   if playlistId:
+      print "playlistId : " + playlistId
+      videos += parseYoutubePlaylist( playlistId )
+   else:
+      videos += [ 'http://' + netloc + path + qv ]
+   return videos
 
 
 ##### Queries ##########
@@ -790,7 +858,7 @@ else:
         gun_root(url)
 
     elif mode == 'einthusan':
-        #try:    
+        try:    
             from resources.einthusan import *
             print 'Log: einthusan import success'
             isDirectory = addon.queries.get('isDirectory', None)
@@ -845,16 +913,16 @@ else:
             function_map[16] = mp3_menu
             print 'submode value 2: ', submode
             function_map[submode](name, url, language, submode)
-        # except:
-        #     #try:
-        #         dialog = xbmcgui.Dialog()
-        #         dialog.ok("Loading at first time", "Downloading necessary files. Won't be shown next time.")
-        #         downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), '__init__.py')
-        #         downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), 'einthusan.py')
-        #         downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), 'DBInterface.py')
-        #         downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), 'HTTPInterface.py')
-        #         downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), 'JSONInterface.py')
-        #         xbmc.executebuiltin("XBMC.Notification(TamilKodi Notification,Einthusan Movies Loaded,5000,"+xbmcaddon.Addon().getAddonInfo('icon')+")")
+        except:
+            #try:
+                dialog = xbmcgui.Dialog()
+                dialog.ok("Loading at first time", "Downloading necessary files. Won't be shown next time.")
+                downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), '__init__.py')
+                downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), 'einthusan.py')
+                downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), 'DBInterface.py')
+                downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), 'HTTPInterface.py')
+                downloadPythonFile(os.path.abspath(programPath + "/" + 'resources'), 'JSONInterface.py')
+                xbmc.executebuiltin("XBMC.Notification(TamilKodi Notification,Einthusan Movies Loaded,5000,"+xbmcaddon.Addon().getAddonInfo('icon')+")")
             #except:
             #    xbmc.executebuiltin("XBMC.Notification(TamilKodi Error,Einthusan Import failed,5000,"+xbmcaddon.Addon().getAddonInfo('icon')+")")
     elif mode == 'settings':
