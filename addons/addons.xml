@@ -17,7 +17,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.bhoomi" name="Bhoomi TV" version="2.0.0" provider-name="gersham">
+<addon id="plugin.video.bhoomi" name="Bhoomi TV" version="2.0.1" provider-name="gersham">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 
