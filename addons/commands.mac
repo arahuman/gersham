@@ -1,3 +1,23 @@
+# New set of commands for Git integration:
+
+https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf
+
+
+1. git status
+
+2. git diff
+
+3. git add [optional: file]
+
+4. git reset 
+
+5. git commit -m '[descriptive message]'
+
+6. git push
+
+
+------------------------------------------------------------------------------------------------------------
+
 zip -r downloads/plugin.video.bharat/plugin.video.bharat-1.0.4.zip plugin.video.bharat -x ".*" -x "*/.*"
 
 svn checkout https://gersham-xbmc-repo.googlecode.com/svn/ gersham-xbmc-repo --username arahuman@gmail.com
@@ -15,3 +35,5 @@ svn delete "file name "
 
 
 svn commit -m "comment"
+
+------------------------------------------------------------------------------------------------------------
